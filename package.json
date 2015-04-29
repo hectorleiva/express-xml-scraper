@@ -1,0 +1,29 @@
+{
+  "name": "node_xml_scrapper",
+  "version": "0.1.2",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hectorleiva/simple-xml-scraper.git"
+  },
+  "description": "Specify the sitemap index and download the xml information locally or on a node.js server.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xml-scrapper",
+    "simple-xml-scrapper"
+  ],
+  "author": "Hector Leiva",
+  "license": "ISC",
+  "dependencies": {
+    "cron-parser": "^0.6.1",
+    "express": "^4.12.3",
+    "minimist": "^1.1.0",
+    "node-schedule": "^0.2.6",
+    "q": "^1.2.0",
+    "simplecrawler": "^0.3.10",
+    "url-validator": "^2.0.3",
+    "xml-stream": "^0.4.5"
+  }
+}
