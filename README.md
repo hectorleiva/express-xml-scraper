@@ -17,7 +17,7 @@ node app.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml
 - This node application features a running internal cron job that can be set using a regular cron expression and using the `cron_schedule=` flag within the CLI command for this job. The following command will scrap on the 30 minute marker the specified sitemap.
 
 ```bash
-node app.js --site=http://www.nytimes-se.com/nytse/sitemap.xml --cron_schedule="30 * * * *"
+node app.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml --cron_schedule="30 * * * *"
 ```
 
 ### Saving
