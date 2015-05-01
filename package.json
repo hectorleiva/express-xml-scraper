@@ -1,9 +1,9 @@
 {
   "name": "express-xml-scrapper",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hectorleiva/simple-xml-scraper.git"
+    "url": "git@github.com:hectorleiva/express-xml-scraper.git"
   },
   "description": "Specify the sitemap index and download the xml information locally or on a node.js server.",
   "main": "app.js",
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "xml-scrapper",
-    "simple-xml-scrapper"
+    "express-xml-scrapper"
   ],
   "author": "Hector Leiva",
   "license": "ISC",
