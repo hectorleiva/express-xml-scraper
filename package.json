@@ -3,12 +3,13 @@
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hectorleiva/express-xml-scraper.git"
+    "url": "https://github.com/hectorleiva/express-xml-scraper"
   },
   "description": "Specify the sitemap index and download the xml information locally or on a node.js server.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "xml-scrapper",
@@ -26,5 +27,10 @@
     "simplecrawler": "^0.3.10",
     "url-validator": "^2.0.3",
     "xml-stream": "^0.4.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hectorleiva/express-xml-scraper/issues"
+  },
+  "homepage": "https://github.com/hectorleiva/express-xml-scraper#readme",
+  "devDependencies": {}
 }
