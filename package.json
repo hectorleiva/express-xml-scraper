@@ -22,6 +22,7 @@
     "minimist": "^1.1.0",
     "node-schedule": "^0.2.6",
     "q": "^1.2.0",
+    "simple-xml-scrapper": "^0.1.2",
     "simplecrawler": "^0.3.10",
     "url-validator": "^2.0.3",
     "xml-stream": "^0.4.5"

@@ -2,7 +2,7 @@
 
 var express = require('express'),
     router = require('./routes'),
-    main_app = require('./app'),
+    simple_xml_scraper = require('simple-xml-scrapper'),
     app = express();
 
 app.use(router);

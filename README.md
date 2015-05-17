@@ -3,9 +3,9 @@
 A XML Scraper with a front-end facing Express server that scrapes for remote XML files while at the same time offering the saved sitemaps on the Node Express server.
 
 ### Set-up
-- Run `npm install` to install all the dependancies.
+- Run `npm install` to install all the dependancies including the [simple-xml-scrapper](https://www.npmjs.com/package/simple-xml-scrapper) app that will crawl the site.
 ```bash
-node app.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml
+node server.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml
 ```
 
 ### Express Server
@@ -17,7 +17,7 @@ node app.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml
 - This node application features a running internal cron job that can be set using a regular cron expression and using the `cron_schedule=` flag within the CLI command for this job. The following command will scrap on the 30 minute marker the specified sitemap.
 
 ```bash
-node app.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml --cron_schedule="30 * * * *"
+node server.js --sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml --cron_schedule="30 * * * *"
 ```
 
 ### Saving

@@ -1,7 +1,6 @@
 'use strict';
 
 var express = require('express'),
-    sitemaps = require('./controllers/sitemaps'),
     router = express.Router();
 
 router.get('/', function(req, res) {
