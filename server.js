@@ -1,8 +1,8 @@
-'user strict';
+'use strict';
 
-var express = require('express'),
-    router = require('./routes'),
-    simple_xml_scraper = require('simple-xml-scrapper'),
+var express              = require('express'),
+    router               = require('./routes'),
+    simple_xml_scraper   = require('simple-xml-scrapper'),
     app = express();
 
 app.use(router);

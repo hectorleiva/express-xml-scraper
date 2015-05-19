@@ -1,5 +1,5 @@
 mocha=@./node_modules/.bin/mocha
-sitemap=--sitemap_index_url=http://www.nytimes-se.com/nytse/sitemap.xml
+sitemap=--sitemap_index_url=http://www.att.com/sitemap.xml
 test-server=spec/spec.server.js
 
 test-server:

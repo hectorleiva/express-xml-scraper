@@ -3,6 +3,7 @@ var path            = require('path'),
     Q               = require('q'),
     fs              = require('fs'),
     supertest       = require('supertest'),
+    msg             = require('../messages'),
     api             = supertest('http://localhost:3001'),
     readDir         = Q.denodeify(fs.readdir),
     assert          = chai.assert,
@@ -27,14 +28,14 @@ describe('Express Crawler Application', function() {
       expect(server).to.be.an.instanceOf(Object);
     });
 
-    it('server homepage is 200 HTTP Access Code', function(done) {
+    it('server homepage returns 200', function(done) {
       api.get('/')
-        .expect(200, done);
+        .expect(200, msg.home_page, done);
     });
 
-    it('server rendered_sitemaps directory is 200 HTTP Access Code', function(done) {
+    it('server rendered_sitemaps directory return 200 with correct body message', function(done) {
       api.get('/rendered_sitemaps')
-        .expect(200, done);
+        .expect(200, msg.rendered_sitemaps_msg, done);
     });
 
     it('server returns 404 for non existent directory', function(done) {
